@@ -10,13 +10,19 @@ public class ExampleLocators extends Methods {
     public ExampleLocators() {
         PageFactory.initElements(DriverManager.get(), this);
     }
+    @FindBy(xpath = "//button[text()='Accept All']")
+    public WebElement acceptCookieButton;
+    @FindBy(css = "a[class='linkStyle']")
+    public WebElement kaizen;
+    @FindBy(css = "label[for='burger_check']")
+    public WebElement hamburgerButton;
+    @FindBy(xpath = "//li[text()='Works']")
+    public WebElement works;
+    @FindBy(xpath = "//li[text()='Products & Service']")
+    public WebElement productServices;
+    @FindBy(xpath = "//li[text()='Careers']")
+    public WebElement careers;
+    @FindBy(xpath = "//li[text()='About']")
+    public WebElement about;
 
-    @FindBy(xpath = "//textarea[@aria-label='username']")
-    public WebElement usernameBox;
-    @FindBy(xpath = "//textarea[@aria-label='password']")
-    public WebElement passwordBox;
-    @FindBy(xpath = "(//input[@name='btnK'])[2]")
-    public WebElement loginBtn;
-    @FindBy(xpath = "(//input[@name='btnK'])[1]")
-    public WebElement logoutBtn;
 }
