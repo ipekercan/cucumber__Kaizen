@@ -15,6 +15,7 @@
         <argLine>-Duser.language=en</argLine>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
